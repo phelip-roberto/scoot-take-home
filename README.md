@@ -2,26 +2,78 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
-## Development server
+<p align="center">	
+   <a href="https://www.linkedin.com/in/phelip-roberto">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+   </a>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/phelip-roberto/scoot-take-home?color=FB250">
 
-## Code scaffolding
+  <a href="https://github.com/phelip-roberto/scoot-take-home/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/phelip-roberto/scoot-take-home?color=FB250">
+  </a> 
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## :computer: Technologies
 
-## Running unit tests
+This project was developed using:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Angular CLI - https://cli.angular.io/
 
-## Running end-to-end tests
+* NodeJs - https://www.npmjs.com/get-npm
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* Json-Server - https://www.npmjs.com/package/json-server
 
-## Further help
+## :book: Documentation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* Documentation for get started with the stable version of [Angular](https://angular.io/);
+
+* Fake API that was used for developing this project: [Json-Server](https://www.npmjs.com/package/json-server);
+
+
+## :construction_worker: Installation
+
+### Clone repo
+
+Copy all your files to your project folder and then:
+
+``` bash
+#go into app's directory
+$ cd spotify-clone
+
+# install app's dependencies
+$ npm install
+```
+### Usage
+
+``` bash
+
+# serve fake api at localhost:3000
+$ npm run api
+
+# serve at localhost:4200 with the proxy configuration for the use of the services
+$ npm start
+
+
+```
+
+## What's included
+
+```
+
+scout-take-home/
+├── e2e/
+├── api/
+├── src/
+│   ├── app/
+│   ├── assests/
+│   ├── environments/
+│   ├── index.html
+│   └── ...
+├── .angular.json
+├── ...
+├── package.json
+└── ...
+```
