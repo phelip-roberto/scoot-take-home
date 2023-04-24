@@ -41,7 +41,7 @@ Copy all your files to your project folder and then:
 
 ``` bash
 #go into app's directory
-$ cd spotify-clone
+$ cd scoot-take-home
 
 # install app's dependencies
 $ npm install
