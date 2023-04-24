@@ -15,6 +15,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
 
 import { ModalCreateItemComponent } from './components/modal-create-item/modal-create-item.component';
+import { DataGridComponent } from './components/data-grid/data-grid.component';
 
 const MaterialModules: any = [
   MatIconModule,
@@ -30,6 +31,7 @@ const MaterialModules: any = [
 ];
 
 const SharedComponents: any = [
+  DataGridComponent,
   ModalCreateItemComponent
 ];
 

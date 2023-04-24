@@ -9,7 +9,7 @@
           <div>
             <mat-form-field appearance="fill">
               <mat-label>Filter Description</mat-label>
-              <input matInput name="description">
+              <input matInput (keyup)="applyFilter($event)" name="description">
             </mat-form-field>
           </div>
           <div class="priority-filter">
@@ -26,7 +26,7 @@
     </div>
     
     <div class="list">
-      
+      <app-data-grid [data]="toDoItems"></app-data-grid>
     </div>
   </div>
 </div>

@@ -20,6 +20,7 @@ export class DashboardComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.getToDoItems();
   }
 
 
@@ -31,10 +32,34 @@ export class DashboardComponent implements OnInit {
       maxWidth: '600px',
       data: {
         onSubmitCallback: () => {
+          this.getToDoItems();
         }
       }
     });
 
+  }
+
+  private getToDoItems() {
+    this.todoService.getToDoList().subscribe({
+      next: (res) => {
+        this.toDoItems = res.sort((a,b) => (a.description > b.description) ? 1 : ((b.description > a.description) ? -1 : 0));
+      },
+      error: (err) => console.log(err)
+    })
+  }
+
+  public filterByString(str: string) {
+    this.toDoItems = this.toDoItems.filter(e => e.description.toLocaleLowerCase().includes(str.toLocaleLowerCase()))
+        .sort((a,b) => a.description.includes(str) && !b.description.includes(str) ? 1 : b.description.includes(str) && !a.description.includes(str) ? -1 :0);
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    console.log(filterValue);
+    if (filterValue.length === 0) {
+      this.getToDoItems();
+    }
+    this.filterByString(filterValue);
   }
 
 
