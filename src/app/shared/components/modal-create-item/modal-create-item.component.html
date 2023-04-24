@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Create New Item</h1>
+<form [formGroup]="createItemForm" (ngSubmit)="createNewItem()">
+  <div mat-dialog-content>
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <input matInput name="description" formControlName="description">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Due Date</mat-label>
+        <input matInput name="dueDate" formControlName="dueDate">
+      </mat-form-field>
+    </div>
+
+    <div class="checkbox-list">
+      <label>Priority: </label>
+      <mat-radio-group formControlName="priority">
+        <mat-radio-button value="low">Low</mat-radio-button>
+        <mat-radio-button value="medium">Medium</mat-radio-button>
+        <mat-radio-button value="high">High</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!createItemForm.valid">Submit</button>
+  </div>
+</form>

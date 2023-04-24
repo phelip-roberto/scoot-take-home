@@ -1,0 +1,16 @@
+.mat-form-field {
+  width: 100%;
+}
+
+.mat-dialog-content {
+  height: 25vh;
+}
+
+.checkbox-list {
+  mat-radio-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
