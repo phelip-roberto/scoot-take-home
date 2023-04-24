@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 @NgModule({
   imports: [
     RouterModule.forChild([
@@ -8,6 +10,13 @@ import { RouterModule } from '@angular/router';
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'
+      },
+      {
+        path: 'home',
+        component: DashboardComponent,
+        data: {
+          title: 'Home'
+        }
       },
     ])
   ],

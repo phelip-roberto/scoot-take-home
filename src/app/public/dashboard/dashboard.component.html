@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="container-header">
+    <h1>Todo List App</h1>
+  </div>
+  <div class="container-body">
+    <div class="container-body-header">
+      <form>
+        <div class="filter">
+          <div>
+            <mat-form-field appearance="fill">
+              <mat-label>Filter Description</mat-label>
+              <input matInput name="description">
+            </mat-form-field>
+          </div>
+          <div class="priority-filter">
+            <mat-checkbox>Low</mat-checkbox>
+            <mat-checkbox>Medium</mat-checkbox>
+            <mat-checkbox>High</mat-checkbox>
+          </div>
+          
+        </div>
+      </form>
+      <div class="create-button">
+        <button mat-raised-button color="primary" (click)="openDialog()"> <mat-icon>library_add</mat-icon> Add</button>
+      </div>
+    </div>
+    
+    <div class="list">
+      
+    </div>
+  </div>
+</div>

@@ -14,16 +14,27 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
 
+import { ModalCreateItemComponent } from './components/modal-create-item/modal-create-item.component';
 
 const MaterialModules: any = [
-  
+  MatIconModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSelectModule,
+  MatButtonModule,
+  MatTableModule,
+  MatDialogModule,
+  MatSnackBarModule,
+  MatCheckboxModule,
+  MatRadioModule
 ];
 
 const SharedComponents: any = [
-  
+  ModalCreateItemComponent
 ];
 
 const EntryComponents: any = [
+  ModalCreateItemComponent
 ];
 
 const SharedModules = [

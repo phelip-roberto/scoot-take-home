@@ -1,5 +1,10 @@
 {
   "itemList": [
-    
+    {
+      "id": "eb709acd-01c3-49e8-0c34-83c0e3c88ac8",
+      "description": "First Item",
+      "priority": "high",
+      "dueDate": "04/25/2023"
+    }
   ]
 }
